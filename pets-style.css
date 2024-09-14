@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+  --main-font: Georgia, serif;
+  --second-font: Arial, Helvetica, sans-serif;
+}
+h3, h4 {
+  margin: 0;
+}
+h4 {
+  text-align: center;
+}
+body {
+  position: relative;
+  background-color: #545454;
+  margin: 0;
+}
+header {
+  min-width: 1280px;
+  margin: 0 auto;
+  height: 120px;
+  background-color: #fff;  
+} 
+.header-container {
+  width: 1200px;
+  height: 60px;
+  margin: 0 auto;
+  padding-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  width: 184px;
+  height: 60px;
+}
+a {
+  text-decoration: none;
+}
+h1 {
+  margin: 0;
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 110%;
+  letter-spacing: 0.05em;
+  color: #545454;
+}
+.logo_subtitle {
+  margin: 0;
+  padding-left: 4px;
+  padding-top: 10px;
+  font-family: var(--second-font);
+  font-weight: 400;
+  font-size: 13px;
+  letter-spacing: 0.1em;
+  color: #292929;
+}
+.nav-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 443px;
+  height: 27px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.nav-menu li a {
+  text-decoration: none;
+  color: #545454;
+  font-family: var(--second-font);
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 160%;
+}
+.nav-menu li a:hover {
+  color: #292929;
+  transition: all 0.4s;
+}
+.nav-menu .menu-active {
+  height: 27px;
+  padding-bottom: 3px;
+  color: #292929;
+  border-bottom: 3px solid #f1cdb3;
+}
+.menu-active {
+  cursor: auto;
+}
+/* Pets section */
+.pets-section {
+  min-width: 1280px;
+  height: 1342px;
+  background-color: #f6f6f6;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.pets-section h3 {
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  text-align: center;
+  color: #545454;
+  margin-top: 80px;
+}
+.slider {
+  display: grid;
+  grid-template-columns: repeat(4, 310px);
+  align-items: center;
+  width: 1200px;
+  height: 930px;
+  margin: 0 auto;
+}
+.slider-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fafafa;
+  border-radius: 9px;
+  width: 270px;
+  height: 435px;
+}
+.slider-card:hover {
+  box-shadow: 0 2px 35px 14px rgba(13, 13, 13, 0.04);
+  transition: 0.3s all;
+}
+.slider-card.left {
+  margin-right: 38px;
+}
+.slider-card.right {
+  margin-left: 38px;
+}
+.card-img {
+  width: 270px;
+  height: 270px;
+}
+.slider-card p {
+  margin: 0;
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 0.06em;
+  text-align: center;
+  color: #545454;
+}
+.btn-light {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 187px;
+  border: 2px solid #f1cdb3;
+  border-radius: 100px;
+  height: 52px;
+  margin-bottom: 30px;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  font-family: var(--main-font);
+  color: #292929;
+}
+.pets-container div.btn {
+  width: 261px;
+}
+.slider-card:hover .btn-light {
+  background-color: #FDDCC4;
+  transition: all 0.4s;
+  border: 2px solid #FDDCC4;
+}
+.pagination-container {
+  width: 340px;
+  height: 52px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.pagination {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pagination.center {
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+  text-align: center;
+  color: #292929;
+  background-color: #f1cdb3;
+  cursor: pointer;
+}
+.pagination.left {
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+  color: #cdcdcd;
+  border: 2px solid #cdcdcd;
+}
+.pagination.right {
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+  color: #292929;
+  border: 2px solid #f1cdb3;
+  cursor: pointer;
+}
+.pagination.right:hover {
+  background-color: #f1cdb3;
+  transition: 0.4s all;
+}
+/* Footer section */
+footer {
+  min-width: 1280px;
+  margin: 0 auto;
+  background: linear-gradient(135deg,#5B483A, #262425,#211F20);
+}
+.footer-background {
+  background-image: url("./img/noise_transparent.svg");
+
+}
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content:space-around;
+  margin: 0 auto;
+  width: 1280px;
+  height: 350px;
+  }
+.contacts {
+  width: 279px;
+  height: 234px;
+  margin-right: 70px;
+}
+.location {
+  width: 302px;
+  height: 234px;
+}
+.contacts,
+.location {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+}
+.contacts h3,
+.location h3 {
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  padding-bottom: 3px;
+  color: #fff;
+}
+.footer-divs a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.footer-divs h4 {
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+  color: #f1cdb3;
+}
+.cont1 {
+  width: 245px;
+}
+.cont2 {
+  width: 235px;
+}
+.loc1 {
+  width: 302px;
+}
+.loc2 {
+  width: 265px;
+}
+.footer-img {
+  width: 300px;
+  height: 310px;
+  background-image: url("./img/footer-puppy.png");
+  margin-top: 40px;
+  margin-left: 70px;
+}
+html, body {
+  scroll-behavior: smooth;
+}
+
+
+.slider-card.hidden {
+  display: none;
+}
+
+/* Стили для кнопок пагинации */
+.pagination.inactive {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.pagination.left p,
+.pagination.right p {
+  cursor: pointer;
+}
+
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  z-index: 100; 
+  display: none; 
+}
+
+body.no-scroll {
+  overflow: hidden;
+}

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./pets-style.css">
+  <link rel="stylesheet" href="./pets-responsive.css">
+  <link rel="stylesheet" href="./burger.css">
+  <link rel="stylesheet" href="./popup.css">
+  <link rel="icon" type="image/x-icon" href="./img/favicon-16x16.png">
+  <title>Our pets</title>
+</head>
+<body>
+  <header>
+    
+    <div class="burger-menu hidden-pets">
+      <div class="burger-container">
+        <ul class="burger-nav-menu">
+          <li class="list__item"><a href="./index.html" class="menu-active">About the shelter</a></li>
+          <li class="list__item"><a href="./pets.html">Our pets</a></li>
+          <li class="list__item"><a href="./index.html#help">Help the shelter</a></li>
+          <li class="list__item"><a href="#footer">Contacts</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="header-container">
+      <div class="logo">
+        <a href="./index.html"><h1>Cozy House</h1></a>
+        <p class="logo_subtitle">Shelter for pets in Boston</p>
+      </div>
+        <nav>
+          <ul class="nav-menu">
+            <li><a href="./index.html">About the shelter</a></li>
+            <li><a href="" class="menu-active">Our pets</a></li>
+            <li><a href="./index.html#help">Help the shelter</a></li>
+            <li><a href="#footer">Contacts</a></li>
+          </ul>
+          <div class="burger-menu-icon hidden-burger">
+            <span> </span>
+            <span> </span>
+            <span> </span>
+          </div>
+        </nav>
+    </div>
+  </header>
+  <main>
+    <section class="pets-section">
+      <h3>Our friends who <br>
+        are looking for a house</h3>
+      <div class="slider">
+        <div class="slider-card js-img">
+          <div class="card-img"></div>
+          <p>Katrine</p>
+          <div class="btn-light">Learn more</div>
+        </div>
+        <div class="slider-card js-img">
+          <div class="card-img"></div>
+          <p>Jennifer</p>
+          <div class="btn-light">Learn more</div>
+        </div>
+        <div class="slider-card js-img">
+          <div class="card-img"></div>
+          <p>Woody</p>
+          <div class="btn-light">Learn more</div>
+        </div>
+        <div class="slider-card hidden1 js-img">
+          <div class="card-img"></div>
+          <p>Sophia</p>
+          <div class="btn-light">Learn more</div>
+        </div>
+        <div class="slider-card hidden1 js-img">
+          <div class="card-img"></div>
+          <p>Timmy</p>
+          <div class="btn-light">Learn more</div>
+        </div>
+        <div class="slider-card hidden1 js-img">
+          <div class="card-img"></div>
+          <p>Charly</p>
+          <div class="btn-light">Learn more</div>
+        </div>
+        <div class="slider-card hidden hidden1 js-img">
+          <div class="card-img"></div>
+          <p>Scarlett</p>
+          <div class="btn-light">Learn more</div>
+        </div>
+        <div class="slider-card hidden hidden1 js-img">
+          <div class="card-img"></div>
+          <p>Freddie</p>
+          <div class="btn-light">Learn more</div>
+        </div>
+      </div>
+      <div class="pagination-container">
+        <div class="pagination left">
+          <p>&lt;&lt;</p>
+        </div>
+        <div class="pagination left">
+          <p>&lt;</p>
+        </div>
+        <div class="pagination center">
+          <p>1</p>
+        </div>
+        <div class="pagination right">
+          <p>&gt;</p>
+        </div>
+        <div class="pagination right">
+          <p>&gt;&gt;</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer id="footer">
+    <div class="footer-background">
+      <div class="footer-container">
+        <section class="contacts">
+          <h3>For questions and suggestions</h3>
+          <div class="footer-divs cont1">
+            <a href="mailto:email@shelter.com">
+              <img src="./img/icons/icon-email.svg" alt="Mail icon">
+              <h4>email@shelter.com</h4>
+            </a>
+          </div>
+          <div class="footer-divs cont2">
+            <a href="tel:+136745677554">
+              <img src="./img/icons/icon-phone.svg" alt="Phone icon">
+              <h4>+13 674 567 75 54</h4>
+            </a>
+          </div>
+        </section>
+        <section class="location">
+          <h3>We are waiting<!--  <br> --> for your visit</h3>
+          <div class="footer-divs loc1">
+            <a href="https://www.google.com/maps/search/1+central+street+boston/@42.314232,-71.1350952,11z/data=!3m1!4b1?entry=ttu">
+              <img src="./img/icons/icon-marker.svg" alt="Location icon">
+              <h4>1 Central Street, Boston (entrance from the store)</h4>
+            </a>
+          </div>
+          <div class="footer-divs loc2">
+            <a href="https://www.google.com/maps/place/South+Park/@51.4690816,-0.19707,17z/data=!3m1!4b1!4m6!3m5!1s0x48760f79376fa0e3:0x202ac3af5c1ea4ec!8m2!3d51.4690816!4d-0.1944951!16s%2Fm%2F0cc6kk9?entry=ttu">
+              <img src="./img/icons/icon-marker.svg" alt="Location icon">
+              <h4>18 South Park, London </h4>
+            </a>
+          </div>
+        </section>
+        <div class="footer-img"></div>
+      </div>
+    </div>
+
+    
+    <div class="overlay"></div>
+    <div class="popup-container hidden-popup">
+      <div class="popup-close-btn">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M7.42618 6.00003L11.7046 1.72158C12.0985 1.32775 12.0985 0.689213 11.7046 0.295433C11.3108 -0.0984027 10.6723 -0.0984027 10.2785 0.295433L5.99998 4.57394L1.72148 0.295377C1.32765 -0.098459 0.68917 -0.098459 0.295334 0.295377C-0.0984448 0.689213 -0.0984448 1.32775 0.295334 1.72153L4.57383 5.99997L0.295334 10.2785C-0.0984448 10.6723 -0.0984448 11.3108 0.295334 11.7046C0.68917 12.0985 1.32765 12.0985 1.72148 11.7046L5.99998 7.42612L10.2785 11.7046C10.6723 12.0985 11.3108 12.0985 11.7046 11.7046C12.0985 11.3108 12.0985 10.6723 11.7046 10.2785L7.42618 6.00003Z" fill="#292929" />
+        </svg>
+      </div>
+      <div class="popup-content">
+        <div class="popup-img"></div>
+        <div class="popup-info">
+          <h3>Jennifer</h3>
+          <h5>Dog-Labrador</h5>
+          <p>Jennifer is a sweet 2 months old Labrador that is patiently waiting 
+            to find a new forever home. This girl really enjoys being able to go 
+            outside to run and play, but won't hesitate to play up a storm in 
+            the house if she has all of her favorite toys.</p>
+            <ul class="popup-list">
+              <li class="popup-list__item"><span class="popup-list-span">Age: <span class="popup-list-span1">2 month</span> </span></li>
+              <li class="popup-list__item"><span class="popup-list-span">Inoculations: <span class="popup-list-span1">none</span> </span></li>
+              <li class="popup-list__item"><span class="popup-list-span">Diseases: <span class="popup-list-span1">none</span> </span></li>
+              <li class="popup-list__item"><span class="popup-list-span">Parasites: <span class="popup-list-span1">none</span> </span></li>
+            </ul>
+        </div>
+      </div>
+    </div>
+
+
+  </footer>
+  <script src="./burger.js"></script>
+  <script src="./indexPets.js"></script>
+</body>
+</html>
