@@ -2,18 +2,18 @@ header {
   position: relative;
 }
 .burger-menu {
-  position: absolute;
-  right: -320px;
+  transform: translateX(-100%); /* hide menu */
+  transition:  0.5s ease-in;
+  position: fixed;
+  right: -640px;
   width: 320px;
   height: 100vh;
   background: #292929;
   z-index: 20;
 }
 .active {
-  /* opacity: 1; */
-  right: 0px;
-  /* transition:  0.5s ease-in; */
-  
+  right: -320px;
+  transition: all 0.5s ease;
 }
 .burger-container {
   width: 320px;
@@ -50,18 +50,14 @@ header {
 .hidden {
   transition: all 0.5s ease-in;
   z-index: 20;
-}
-.hidden-pets {
-  transition: all 0.5s ease-in;
-  z-index: 20;
   display: none;
 }
 .hidden-burger {
   z-index: 20;
 }
 .rotate {
-  rotate: 90deg;
-  transition: all 0.3s ease-in;
+  transform: rotate(90deg);
+  transition:  0.4s ease-in;
 }
 .lock-scroll {
   overflow: hidden;
@@ -77,3 +73,41 @@ header {
   display: none; 
 }
 
+
+/* Burger Menu */
+.hidden {
+  display: none;
+}
+.burger-menu-icon {
+  position: relative;
+  display: flex;
+  width: 30px;
+  height: 22px;
+  gap: 5px;
+  justify-content: space-between;
+  z-index: 21;
+  display: none;
+  cursor: pointer;
+}
+.burger-menu-icon span {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #f1cdb3;
+  z-index: 20;
+}
+.burger-menu-icon span:nth-child(2) {
+  top: 50%;
+  z-index: 20;
+}
+.burger-menu-icon span:nth-child(3) {
+  top: 100%;
+  z-index: 20;
+}
+
+@media screen and (max-width: 767px) {
+.burger-menu-icon {
+  display: block;
+}
+}
